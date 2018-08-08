@@ -37,9 +37,29 @@ sh <path-to-id3filename.sh> [<file> | <directory>]
 This script can be used on an MP3 file for single execution or on an entire
 directory. When used on a directory, only MP3 files will be effected.
 
+## Install
+
+### Via CURL
+
+This installs the script to your $HOME directory.
+
+```
+mkdir -p ~/.id3-to-filename && \
+curl -Lko ~/.id3-to-filename/LICENSE.md https://raw.githubusercontent.com/Grafluxe/id3-to-filename/master/LICENSE.md && \
+curl -Lko ~/.id3-to-filename/id3filename.sh https://raw.githubusercontent.com/Grafluxe/id3-to-filename/master/id3filename.sh && \
+echo 'alias id3filename="sh ~/.id3-to-filename/id3filename.sh"' >> ~/.profile && \
+source ~/.profile && \
+echo Done!
+```
+
+### Via zip file
+
+- Download the [zip file](https://github.com/Grafluxe/id3-to-filename/archive/v1.0.0.zip).
+- Unzip it.
+- Run the bash file `id3filename.sh`.
+
 ## TODO
 
-- Add `.profile` installer for easy reuse.
 - Add support for unicode characters.
 
 ## License
