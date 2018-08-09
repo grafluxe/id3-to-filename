@@ -5,6 +5,10 @@ tags.
 
 ![screencast](screencast.gif)
 
+If installing via the [CURL command](#via-curl) below, you can use the
+`id3filename` command instead of executing the file directly with
+`sh id3filename.sh`.
+
 ## Why
 
 This script was created for those who like to manage their own music files
@@ -32,7 +36,7 @@ James Brown - Get On The Good Foot.mp3
 ## Usage
 
 ```
-sh <path-to-id3filename.sh> [<file> | <directory>]
+id3filename [<file> | <directory>]
 ```
 This script can be used on an MP3 file for single execution or on an entire
 directory. When used on a directory, only MP3 files will be effected.

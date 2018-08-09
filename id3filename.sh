@@ -7,7 +7,7 @@
 if [ -z "$1" ]; then
   echo "id3-to-filename (v1.0.0)"
   echo "https://github.com/grafluxe/id3-to-filename\n-"
-  echo "Usage: sh <path-to-id3filename.sh> [<file> | <directory>]"
+  echo "Usage: id3filename [<file> | <directory>]"
   exit
 fi
 
