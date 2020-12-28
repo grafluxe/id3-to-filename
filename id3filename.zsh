@@ -5,7 +5,7 @@
 # @license MIT
 
 if [ -z "$1" ]; then
-  echo "id3-to-filename (v2.0.0)"
+  echo "id3-to-filename (v2.0.1)"
   echo "https://github.com/grafluxe/id3-to-filename\n-"
   echo "Usage: id3filename [<file> | <directory>]"
   exit

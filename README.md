@@ -58,7 +58,7 @@ echo Done!
 
 ### Via zip file
 
-- Download the [zip file](https://github.com/grafluxe/id3-to-filename/archive/v2.0.0.zip).
+- Download the [zip file](https://github.com/grafluxe/id3-to-filename/archive/v2.0.1.zip).
 - Unzip it.
 - Run the bash file `id3filename.zsh`.
 
