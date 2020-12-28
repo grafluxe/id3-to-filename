@@ -7,7 +7,7 @@ tags.
 
 If installing via the [CURL command](#via-curl) below, you can use the
 `id3filename` command instead of executing the file directly with
-`sh id3filename.sh`.
+`zsh id3filename.zsh`.
 
 ## Why
 
@@ -49,26 +49,27 @@ This installs the script to your $HOME directory.
 
 ```
 mkdir -p ~/.id3-to-filename && \
-curl -Lko ~/.id3-to-filename/LICENSE.md https://raw.githubusercontent.com/Grafluxe/id3-to-filename/master/LICENSE.md && \
-curl -Lko ~/.id3-to-filename/id3filename.sh https://raw.githubusercontent.com/Grafluxe/id3-to-filename/master/id3filename.sh && \
-echo 'alias id3filename="sh ~/.id3-to-filename/id3filename.sh"' >> ~/.profile && \
-source ~/.profile && \
+curl -Lko ~/.id3-to-filename/LICENSE.md https://raw.githubusercontent.com/grafluxe/id3-to-filename/master/LICENSE.md && \
+curl -Lko ~/.id3-to-filename/id3filename.zsh https://raw.githubusercontent.com/grafluxe/id3-to-filename/master/id3filename.zsh && \
+echo 'alias id3filename="zsh ~/.id3-to-filename/id3filename.zsh"' >> ~/.zshrc && \
+source ~/.zshrc  && \
 echo Done!
 ```
 
 ### Via zip file
 
-- Download the [zip file](https://github.com/Grafluxe/id3-to-filename/archive/v1.0.0.zip).
+- Download the [zip file](https://github.com/grafluxe/id3-to-filename/archive/v2.0.0.zip).
 - Unzip it.
-- Run the bash file `id3filename.sh`.
+- Run the bash file `id3filename.zsh`.
 
-## TODO
 
-- Add support for unicode characters.
+## Bash Version
+
+While the current version executes in zsh, [v1.0.0](https://github.com/grafluxe/id3-to-filename/blob/v1.0.0/README.md) executes in bash.
 
 ## License
 
-Copyright (c) 2018 Leandro Silva (http://grafluxe.com)
+Copyright (c) 2018 - 2020 Leandro Silva (http://grafluxe.com)
 
 Released under the MIT License.
 

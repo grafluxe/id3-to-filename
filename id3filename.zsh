@@ -1,11 +1,11 @@
 #!/bin/zsh
 
 # @author Leandro Silva
-# @copyright 2018 Leandro Silva (http://grafluxe.com)
+# @copyright 2018 - 2020 Leandro Silva (http://grafluxe.com)
 # @license MIT
 
 if [ -z "$1" ]; then
-  echo "id3-to-filename (v1.0.0)"
+  echo "id3-to-filename (v2.0.0)"
   echo "https://github.com/grafluxe/id3-to-filename\n-"
   echo "Usage: id3filename [<file> | <directory>]"
   exit
