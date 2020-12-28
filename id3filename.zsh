@@ -20,10 +20,14 @@ id3_to_filename() {
   dir=$2
   ext=$(echo ${file##*.})
 
-  data=$(mdls "$file" | tr -s "\n" " ")
-  artist=$(echo $data | sed 's/.*kMDItemAuthors = ( \(.*\) ) kMDItemC.*/\1/' | \
-    sed s/\"//g)
-  title=$(echo $data | sed 's/.*kMDItemTitle = "\(.*\)" .*/\1/')
+  data=$(mdls "$file" | tr -s " " | tr "\n" "\`")
+  artist=$(echo $data \
+    | sed 's/.*kMDItemAuthors = (` \([^`]*\).*/\1/' \
+    | sed 's/^"//' \
+    | sed 's/"$//')
+  title=$(echo $data \
+    | sed 's/.*kMDItemTitle = "\([^`]*\).*/\1/' \
+    | sed 's/"$//')
   new_name="$artist - $title.$ext"
 
   echo $color_red$(basename "$file") $color_none"->"$color_green $new_name
