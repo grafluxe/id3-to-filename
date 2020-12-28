@@ -65,7 +65,7 @@ echo Done!
 
 ## Bash Version
 
-While the current version executes in zsh, [v1.0.0](https://github.com/grafluxe/id3-to-filename/blob/v1.0.0/README.md) executes in bash.
+While the current version executes in zsh, v1.0.0 executes in bash. You can download it [here](https://github.com/grafluxe/id3-to-filename/archive/v1.0.0.zip).
 
 ## License
 
