@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # @author Leandro Silva
 # @copyright 2018 Leandro Silva (http://grafluxe.com)
