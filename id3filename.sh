@@ -17,7 +17,7 @@ color_none="\033[0m"
 
 id3_to_filename() {
   file=$1
-  path=$2
+  dir=$2
   ext=$(echo ${file##*.})
 
   data=$(mdls "$file")
@@ -27,7 +27,7 @@ id3_to_filename() {
   new_name="$artist - $title.$ext"
 
   echo $color_red$(basename "$file") $color_none"->"$color_green $new_name
-  mv "$file" "$path/$artist - $title.$ext"
+  mv "$file" "$dir/$artist - $title.$ext"
 }
 
 if [ -d "$1" ]; then
