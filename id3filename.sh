@@ -20,7 +20,7 @@ id3_to_filename() {
   dir=$2
   ext=$(echo ${file##*.})
 
-  data=$(mdls "$file")
+  data=$(mdls "$file" | tr -s "\n" " ")
   artist=$(echo $data | sed 's/.*kMDItemAuthors = ( \(.*\) ) kMDItemC.*/\1/' | \
     sed s/\"//g)
   title=$(echo $data | sed 's/.*kMDItemTitle = "\(.*\)" .*/\1/')
