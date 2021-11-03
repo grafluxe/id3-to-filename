@@ -48,12 +48,7 @@ directory. When used on a directory, only MP3 files will be effected.
 This installs the script to your $HOME directory.
 
 ```
-mkdir -p ~/.id3-to-filename && \
-curl -Lko ~/.id3-to-filename/LICENSE.md https://raw.githubusercontent.com/grafluxe/id3-to-filename/master/LICENSE.md && \
-curl -Lko ~/.id3-to-filename/id3filename.zsh https://raw.githubusercontent.com/grafluxe/id3-to-filename/master/id3filename.zsh && \
-echo 'alias id3filename="zsh ~/.id3-to-filename/id3filename.zsh"' >> ~/.zshrc && \
-source ~/.zshrc  && \
-echo Done!
+/bin/zsh -c "$(curl -Lk https://raw.githubusercontent.com/grafluxe/id3-to-filename/master/install.zsh)"
 ```
 
 ### Via zip file
